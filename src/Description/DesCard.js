@@ -46,7 +46,11 @@ function DesCard() {
                 marginBottom: "10px",
               }}
             >
-              <Item.Image size="medium" src={movie[0].posterURL} />
+              <Item.Image size="medium"    style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}src={movie[0].posterURL} />
               <Item.Content>
                 <Item.Header style={{fontSize:"30px"}}>{movie[0].title}</Item.Header>
                 <hr />
